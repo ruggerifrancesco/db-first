@@ -25,7 +25,7 @@
                 <th scope="col">Campo</th>
                 <th scope="col">Tipo</th>
                 <th scope="col">Lunghezza / Grandezza</th>
-                <th scope="col">Indice</th>
+                <th scope="col">Addiotionals</th>
                 <th scope="col">Null</th>
                 <th scope="col">Univoco</th>
             </tr>
@@ -38,7 +38,7 @@
                 <td>mediumint</td>
                 <td>PRIMARY_KEY</td>
                 <td>NOT NULL</td>
-                <td>UNIQUE</td>
+                <td>(AUTO_INCREMENT, UNIQUE)</td>
             </tr>
             <tr>
                 <th scope="row">2</th>
@@ -77,11 +77,13 @@
                 <td></td>
             </tr>
             <tr>
+                <!-- UNSIGNED e un valore per non far andare -->
+                <!-- valori sotto lo 0 -->
                 <th scope="row">6</th>
                 <td>mileage</td>
                 <td>int</td>
                 <td>mediumint</td>
-                <td>INDEX</td>
+                <td>(UNSIGNED, INDEX)</td>
                 <td>NOT NULL</td>
                 <td></td>
             </tr>
